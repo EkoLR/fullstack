@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Zoro</title>
+</head>
+<body> 
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">menu</h5>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li> <a href="#"> Home </a></li>
+                    <li><a href=""> Subbed Anime</a></li>
+                    <li><a href=""> Dubbed Anime</a></li>
+                    <li><a href="">Most popular</a> </li>
+                    <li><a href=""> Movie</a> </li>
+                    <li><a href="">Tv Series </a></li>
+                    <li><a href="">OVAs</a> </li>
+                    <li><a href=""> ONAs</a></li>
+                    <li><a href="">Specials</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Genre</a> </li>
+                </ul>
+                <div class="row">
+                    <article>
+                    <ul>
+                        <li><a href=""> Action</a></li>
+                        <li><a href=""> Cars</a></li>
+                        <li><a href=""> Dementia</a></li>
+                        <li><a href=""> Drama</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Adventure</a> </li>
+                        <li><a href=""> Comedy</a></li>
+                        <li><a href=""> Demons </a></li>
+                        <li><a href=""> Ecchi</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+     </div>
+    <nav>
+        <div class="container-fluid">
+            <div class="container ">
+                <div class="nav_inside  d-flex  align-items-center">
+
+                    <div id="header-left">
+
+                    <button class="btn menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> 
+                        <i class="fa-sharp fa-solid fa-bars fa-xl"></i>
+                    </button>
+                    <a href="#" id="logo" class="px-2">
+                        <img class="d-flex" src="/logo.png" alt="">
+                        </a>
+                    
+                        <div class="search-content d-none d-lg-block width px-2  bg-light">
+                            <form class="d-flex" role="search">
+                                <input class="form-control border-0 outline-0" type="search" placeholder="Search Anime..." aria-label="Search">
+                                <button class="btn btn-outline text-md-end" type="submit"> <i class="fa fa-search"></i> </button>
+                            </form>
+                        </div><!-- search -->
+
+                        <div class=" p-0 mx-2 my-2 h-100 d-none d-md-flex align-items-center">
+                                <p class="m-0">Join <br> now</p>
+                            <div class="icons d-flex justify-content-start align-items-center ">
+                                <i class="fa-brands fa-discord rounded-4  py-0 px-2 m-1"></i>
+                                <i class="fa-brands fa-telegram rounded-4  py-0 px-2 m-1 "></i>
+                                <i class="fa-brands fa-twitter  rounded-4 py-0 px-2 m-1"></i>
+                                <i class="fa-brands fa-reddit-alien rounded-4 py-0 px-2 m-1"></i>
+                            </div><!-- Icons -->  
+                        </div><!-- #AllIcons -->
+                </div> <!-- #header-left -->
+
+
+
+                        <div id="search-login-right" >
+                            <button class="btn btn-outline  text-light d-lg-none d-md-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa fa-search"></i></button>
+
+                            <div class="offcanvas offcanvas-top  bg-light" tabindex="1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <form class="d-flex w-100" role="search">
+                                    <input class="form-control border-0 outline-0" type="search" placeholder="Search Anime..." aria-label="Search">
+                                    <button class="btn btn-outline text-md-end" type="submit"> <i class="fa fa-search text-dark"></i> </button>
+                                </form>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                            </div>      
+                           
+                        <div class="offcanvas-header"></div>
+                            <div class="text-md-end text-start login">
+                                <a href="#"> Login</a>
+                            </div> <!-- login -->
+                        </div> <!-- #search-login-left -->
+
+                </div>
+            </div>
+        </div>    
+    </nav>
+
+    <main>
+        <div class="container   ">
+            <div >
+                <div class=" imagepost " style="background-image: url(/img/71e709d703c37be7253caadfd955f8cb.jpg);"></div>             
+            </div>
+            
+            <div class=" position-relative"> 
+                <div class="row  text-start  justify-content-md-start justify-content-center">  
+                    <div class=" pt-3">
+                        <span>Home</span>
+                        <span><i class="bi bi-dot text-secondary"></i> TV</span>
+                        <span class="text-secondary"> <i class="bi bi-dot text-secondary"></i>Watching High card</span>
+                     </div>
+                     <div class="   col-12  my-2 col-md-8">
+                            </div> 
+                                
+                             <div class="col-lg-8 col-12 bg-dark p-2">  
+                                <div class="col-md-12    position-relative"> 
+                                    <div class="row">
+                                    <div class="col-12"> 
+                                    <video class=" object-fit-contain w-100 " controls>
+                                        <source src="/videos/example.mp4" type="video/mp4">
+                                      </video> 
+                                    </div> 
+                                    <div class="d-flex ">
+                                        <ul class="col-8 d-lg-none d-flex p-2 black mx-0 list-play">
+                                            <li class="p-1">
+                                                <a href="" title=" Auto Play"> <i class="fa-solid fa-square"></i> </a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href="" title="Play Next"> <i class="fa-solid fa-check"></i>  </a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href="" title="Auto stop"> <i class="fa-solid fa-square"></i> </a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href=""title="Light"><i class="fa-solid fa-lightbulb"></i></a>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-4 black d-lg-none d-flex p-2 justify-content-end mx-0 list-play">
+                                            <li class="p-1">
+                                                <a href="" title="perv"> <i class="fa-solid fa-backward-step"></i> </a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href="" title="next"> <i class="fa-solid fa-forward-step"></i> </a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href="" title="add to list"> <i class=" fa-solid fa-list"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <ul class="col-8 p-2 black d-lg-flex d-none mx-0 list-play">
+                                            <li class="p-1">
+                                                <a href="" title=" Auto Play"> <i class="fa-solid fa-square"></i> Auto Play</a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href="" title="Play Next"> <i class="fa-solid fa-check"></i>  Play Next</a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href="" title="Auto stop"> <i class="fa-solid fa-square"></i> Auto stop</a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href="" title="Light"><i class="fa-solid fa-lightbulb"></i>Light</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-4 black  d-lg-flex d-none p-2 justify-content-end mx-0 list-play">
+                                            <li class="p-1">
+                                                <a href="" title="perv"> <i class="fa-solid fa-backward-step"></i> perv</a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href="" title="next"> <i class="fa-solid fa-forward-step"></i> next</a>
+                                            </li>
+                                            <li class="p-1">
+                                                <a href="" title="add to list"> <i class=" fa-solid fa-list"></i> list</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                    <div class=" row ">
+                                        <div class="d-flex p-2 ">   
+                                        <div class="   p-2 col-md col-md-2  justify-content-start align-items-center">
+                                            <span class=" p-2 font">list of episodes </span>
+                                        </div><!-- list -->
+                
+                                            <div class="list-video col-md-4 col-12 ">
+                                            <ul class=" d-flex justify-content-start  align-items-center">
+                                                <a href="#">
+                                                    <li>
+                                                        <span >1</span> 
+                                                       
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>
+                                                        <span >2</span> 
+                                                       
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>
+                                                        <span >3</span> 
+                                                       
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>
+                                                        <span >4</span> 
+                                                       
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>
+                                                        <span >5</span> 
+                                                       
+                                                    </li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>
+                                                        <span >6</span> 
+                                                       
+                                                    </li>
+                                                </a>
+                                            <a href="#">
+                                                <li>
+                                                    <span >7</span> 
+                                                   
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    <span >8</span> 
+                                                   
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    <span >9</span> 
+                                                   
+                                                </li>
+                                            </a>
+                                                </ul>
+                                                </div>
+                                            </div>  
+                                        </div>     
+                                    </div>        
+                                
+                                  </div>            
+                    
+                      <div class="col-lg-3 col-12 mx-3 my-1">
+                        <div>
+                            <img class=" " src="/img/71e709d703c37be7253caadfd955f8cb.jpg"  style="width: 120px;">
+                        </div>
+                        <div class="my-2"> <h4> High Card</h4> </div>
+                        <div class=" my-3">
+                            <span class="R rounded-2 py-1 px-1">R</span>
+                            <span class="HS rounded-2 py-1 px-1">HD</span>
+                            <span class="HS rounded-2 py-1 px-1">SUB</span>
+                        </div>
+                        <div class="my-2">
+                            <p >After discovering that his orphanage was on the brink of closing due to financial stress, Finn, who was living freely on the streets, set out for a casino with the aim of making a fortune. However, nothing could have prepared Finn for the nightmare that was await...
+                                <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    +more 
+                                  </a>
+                            </p>
+                        </div>
+                        <div class=" my-2">
+                            <p >Zoro is the best site to watch <strong>High Card</strong>  SUB online, or you can even watch <strong>High Card</strong> DUB in HD quality. You can also find <strong>Studio Hibari</strong>  anime on Zoro website.</p>
+                        </div>
+                        <div class=" my-2   View-detail">
+                           <a href="/page.html">View detail</a>
+                        </div>
+                    </div> <!-- info of anime -->
+                      
+
+  
+        <div class="container bg-grey position-relative">
+            <div class="row p-3 justify-content-sm-center">
+
+                <div class="col-md-12 col-xxl-9 col-12">
+                    <h5 class="ms-5 ps-3">You must be <a class="comment" href="">login</a>  to post a comment </h5>
+                    <div class="d-flex align-items-center">
+                        <div class="avatar">
+                            <img src="/img/avatar.png" alt="">
+                        </div>
+                        <div class="form-floating Comments w-100">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; ;"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                          </div>
+                    </div >
+                    <div class="row mt-4">
+                        <h2>Recommended for you</h2>
+
+
+                        <div class="col-md-3 col-xl-3 col-lg-3 col-sm-4 col-6">
+                            <div class="card cardes ">
+                                <img src="/img/efe14cc95072a24d780ea717b467019b.jpg" class="card-img-top bg-black" alt="...">
+                                <div class="card-body">
+                                    <h5><a href="#">Hirogaru Sky! Precure</a> </h5>
+                                    <p class="card-text">A major incident has occurred in the peaceful Sky Land!? The young Princess Elle has been kidnapped by the monsters of Underg Empire! A...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="col-md-3 col-xl-3 col-lg-3 col-sm-4 col-6">
+                            <div class="card cardes " >
+                                <img src="/img/92b1395533dc5e1bedfcf757eb3f6209.jpg" class="card-img-top bg-black" alt="...">
+                                <div class="card-body">
+                                    <h5><a href="#">Tokyo Revengers: Christmas Showdown (Uncensored)</a> </h5>
+                                    <p class="card-text">Watching the news, Takemichi Hanagaki learns that his girlfriend from way back in middle school, Hinata Tachibana, has died. The only girlfriend he...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="col-md-3 col-xl-3 col-lg-3 col-sm-4 col-6"> 
+                            <div class="card cardes " >
+                                <img src="/img/fd875c4607ae9a0d5170e4ea06397f51.jpg" class="card-img-top bg-black" alt="...">
+                                <div class="card-body">
+                                    <h5><a href="#">My Life as Inukai-san's Dog (Uncensored)</a> </h5>
+                                    <p class="card-text">They say every dog has his day. That's especially true for our protagonist, who was just turned into a dog and now lives every day under the care of his...</p>
+                                </div>
+                            </div>   
+                        </div>    
+        
+        
+                        <div class="col-md-3 col-xl-3 col-lg-3 col-sm-4 col-6">
+                            <div class="card cardes" >
+                                <img src="/img/71e709d703c37be7253caadfd955f8cb.jpg" class="card-img-top bg-black" alt="...">
+                                <div class="card-body">
+                                    <h5><a href="/page.html">High Card</a> </h5>
+                                    <p class="card-text">After discovering that his orphanage was on the brink of closing due to financial stress, Finn, who was living freely on the streets, set out for a casino</p>
+                                </div>       
+                            </div>
+                        </div> 
+        
+        
+                        <div class="col-md-3 col-xl-2 col-lg-3 col-sm-4 col-6">      
+                            <div class="card my-1">
+                                <img src="/img/71e709d703c37be7253caadfd955f8cb.jpg" class="card-img-top bg-black" alt="...">
+                                    <div class="card-body fixed">
+                                            <h5><a href="#">High Card</a> </h5>
+                                        <div class="card-footer  d-flex fix justify-content-start align-items-start ">
+                                            <span>TV</span>
+                                            <span ><i class="bi bi-dot fs-4"></i></span>
+                                            <span>24min</span>
+                                        </div>  
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                            <div class="col-md-3 col-xl-2 col-lg-3 col-sm-4 col-6">      
+                                <div class="card my-1" >
+                                    <img src="/img/71e709d703c37be7253caadfd955f8cb.jpg" class="card-img-top bg-black" alt="...">
+                                        <div class="card-body fixed">
+                                                <h5><a href="#">High Card</a> </h5>
+                                            <div class="card-footer  d-flex fix justify-content-start align-items-start ">
+                                                <span>TV</span>
+                                                <span ><i class="bi bi-dot fs-4"></i></span>
+                                                <span>24min</span>
+                                            </div>  
+                                        </div>
+                                </div>
+                            </div>
+        
+        
+                            <div class="col-md-3 col-xl-2 col-lg-3 col-sm-4 col-6">      
+                                <div class="card my-1" >
+                                    <img src="/img/71e709d703c37be7253caadfd955f8cb.jpg" class="card-img-top bg-black" alt="...">
+                                        <div class="card-body fixed">
+                                                <h5><a href="#">High Card</a> </h5>
+                                            <div class="card-footer  d-flex fix justify-content-start align-items-start ">
+                                                <span>TV</span>
+                                                <span ><i class="bi bi-dot fs-4"></i></span>
+                                                <span>24min</span>
+                                            </div>  
+                                        </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-3 col-xl-2 col-lg-3 col-sm-4 col-6">      
+                                <div class="card my-1" >
+                                    <img src="/img/71e709d703c37be7253caadfd955f8cb.jpg" class="card-img-top bg-black" alt="...">
+                                        <div class="card-body fixed">
+                                                <h5><a href="#">High Card</a> </h5>
+                                            <div class="card-footer  d-flex fix justify-content-start align-items-start ">
+                                                <span>TV</span>
+                                                <span ><i class="bi bi-dot fs-4"></i></span>
+                                                <span>24min</span>
+                                            </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="col-md-3 col-xl-2 col-lg-3 col-sm-4 col-6">      
+                                <div class="card my-1" >
+                                    <img src="/img/71e709d703c37be7253caadfd955f8cb.jpg" class="card-img-top bg-black" alt="...">
+                                        <div class="card-body fixed">
+                                                <h5><a href="#">High Card</a> </h5>
+                                            <div class="card-footer  d-flex fix justify-content-start align-items-start ">
+                                                <span>TV</span>
+                                                <span ><i class="bi bi-dot fs-4"></i></span>
+                                                <span>24min</span>
+                                            </div>  
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                            <div class="col-md-3 col-xl-2 col-lg-3 col-sm-4 col-6">      
+                                <div class="card my-1" >
+                                    <img src="/img/71e709d703c37be7253caadfd955f8cb.jpg" class="card-img-top bg-black" alt="...">
+                                        <div class="card-body fixed">
+                                                <h5><a href="#">High Card</a> </h5>
+                                            <div class="card-footer  d-flex fix justify-content-start align-items-start ">
+                                                <span>TV</span>
+                                                <span ><i class="bi bi-dot fs-4"></i></span>
+                                                <span>24min</span>
+                                            </div>  
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                            <div class="col-md-3 col-xl-2 col-lg-3 col-sm-4 col-6">      
+                                <div class="card my-1" >
+                                    <img src="/img/71e709d703c37be7253caadfd955f8cb.jpg" class="card-img-top bg-black" alt="...">
+                                        <div class="card-body fixed">
+                                                <h5><a href="#">High Card</a> </h5>
+                                            <div class="card-footer  d-flex fix justify-content-start align-items-start ">
+                                                <span>TV</span>
+                                                <span ><i class="bi bi-dot fs-4"></i></span>
+                                                <span>24min</span>
+                                            </div>  
+                                    </div>
+                                </div>
+                            </div>
+        
+                
+                
+                    <nav aria-label="Page navigation example navs">
+                        <ul class="pagination justify-content-center align-items-center my-5">
+                          <li class="page-item ">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                
+            </div>
+                <div class="col-xxl-3 col-md-12 col-12">
+                        <h2>Most Viewed</h2>
+                                       
+                        <div class="card text-center  ">
+                            <div class="card-header most">
+                              <ul class="nav nav-tabs card-header-tabs d-flex justify-content-center">
+                                <li class="nav-item colors ">
+                                  <a href="#" class="nav-link " aria-current="true" href="#">Today</a>
+                                </li>
+                                <li class="nav-item colors ">
+                                  <a href="#" class="nav-link " href="#">Week</a>
+                                </li>
+                                <li class="nav-item colors ">
+                                  <a href="#" class="nav-link ">Month</a>
+                                </li>
+                              </ul>
+                            </div>
+                            
+                            <div class="card-body ca row">
+                             
+                                <ul class="nav nav-pills card-header-pills">
+                                    <div class="row text-start ">
+                                        <li class="col-12 px-2 mt-3">
+                                            <div class="position-relative">
+                                                <span class="numbers">1</span>
+                                            </div>
+                                            <img  src="/img/71e709d703c37be7253caadfd955f8cb.jpg" alt="">
+                                            <h5 class="ms-5 ps-5 name-width">High Card</h5>
+                                            <div class=" px-3 d-flex">
+                                                <span class=" p-0">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span>
+                                                    <p>15000</p>
+                                                </span>
+                                                <span class="ps-2">
+                                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                                </span>
+                                                <span>  
+                                                    <p>5000</p>
+                                                </span>  
+                                            </div> 
+                                        </li>
+                                        <li class=" col-12 px-2 mt-3 text-start">
+                                            <div class="position-relative">
+                                                <span class="numbers ">2</span>
+                                            </div>
+                                            <img class="sizer" src="/img/92b1395533dc5e1bedfcf757eb3f6209.jpg" alt="">
+                                            <h5 class="ms-5 ps-5 name-width">Tokyo Revengers</h5>
+                                            <div class=" px-3 d-flex">
+                                                <span class=" p-0">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span>
+                                                    <p>15000</p>
+                                                </span>
+                                                <span class="ps-2">
+                                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                                </span>
+                                                <span>  
+                                                    <p>5000</p>
+                                                </span>  
+                                            </div> 
+                                        </li>
+                                        <li class="col-12 px-2 mt-3 text-start">
+                                            <div class="position-relative">
+                                                <span class="numbers">3</span>
+                                            </div>
+                                            <img  src="/img/efe14cc95072a24d780ea717b467019b.jpg" alt="">
+                                            <h5 class="ms-5 ps-5 name-width">Hirogaru Sky! Precure</h5>
+                                            <div class=" px-3 d-flex">
+                                                <span class=" p-0">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span>
+                                                    <p>15000</p>
+                                                </span>
+                                                <span class="ps-2">
+                                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                                </span>
+                                                <span>  
+                                                    <p>5000</p>
+                                                </span>  
+                                            </div>     
+                                        </li>
+                                    <li class="col-12 px-2 mt-3 text-start">
+        
+                                            <div class="position-relative">
+                                                <span class="numbers">4</span>
+                                                <img  src="/img/fd875c4607ae9a0d5170e4ea06397f51.jpg" alt="">
+                                                    <h5 class="ms-5 ps-5 name-width">My Life as Inukai-san's Dog</h5>
+                                                    <div class=" px-3 mt-2 d-flex">
+                                                        <div class=" p-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </div>
+                                                        <div>
+                                                            <p>15000</p>
+                                                        </div>
+                                                        <div class="ps-2">
+                                                            <i class="fa-sharp fa-solid fa-heart"></i>
+                                                        </div>
+                                                        <div>  
+                                                            <p>5000</p>
+                                                        </div> 
+                                                    </div>             
+                                            </div>
+          
+                                        </li>
+                                        <li class="col-12 px-2 mt-3 text-start">
+                                            <div class="position-relative">
+                                                <span class="numbers">5</span>
+                                            </div>
+                                            <img  src="/img/71e709d703c37be7253caadfd955f8cb.jpg" alt="">
+                                            <h5 class="ms-5 ps-5 name-width">High Card</h5>
+                                            <div class=" px-3 d-flex">
+                                                <span class=" p-0">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span>
+                                                    <p>15000</p>
+                                                </span>
+                                                <span class="ps-2">
+                                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                                </span>
+                                                <span>  
+                                                    <p>5000</p>
+                                                </span>  
+                                            </div>   
+                                        </li>
+                                        <li class="col-12 px-2 mt-3 text-start">
+                                            <div class="position-relative">
+                                                <span class="numbers">6</span>
+                                            </div>
+                                            <img  src="/img/71e709d703c37be7253caadfd955f8cb.jpg" alt="">
+                                            <h5 class="ms-5 ps-5 name-width">High Card</h5>
+                                            <div class=" px-3 d-flex">
+                                                <span class=" p-0">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span>
+                                                    <p>15000</p>
+                                                </span>
+                                                <span class="ps-2">
+                                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                                </span>
+                                                <span>  
+                                                    <p>5000</p>
+                                                </span>  
+                                            </div> 
+                                        </li>     
+                                        </li>
+                                      </ul> 
+                                    </div>                   
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+             </div>
+            </div>
+            
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="container-fluid">
+
+            </div>
+        </div>    
+    </footer>    
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
